@@ -1,0 +1,72 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.comic-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.comic-item {
+  border: 2px solid #444;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.comic-item img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.chapter-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.chapter-item {
+  width: 150px;
+  text-align: center;
+}
+
+.chapter-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.chapter-item span {
+  display: block;
+  margin-top: 5px;
+  color: #00aaff;
+}
+
+.comic-container img {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.nav {
+  margin: 30px;
+}
+
+.nav a {
+  color: #00aaff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
