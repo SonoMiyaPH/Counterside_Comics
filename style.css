@@ -22,7 +22,10 @@ body {
 }
 
 .comic-item img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -41,7 +44,10 @@ body {
 }
 
 .chapter-item img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
   border-radius: 5px;
 }
 
