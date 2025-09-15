@@ -30,6 +30,13 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.comic-item > img:first-child {
+  max-width: 70%;
+  max-height: 600px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
 .chapter-list {
   width: auto;
   border-collapse: collapse;
@@ -38,11 +45,11 @@ body {
 
 .chapter-item {
   border-bottom: 1px solid #444;
-  height: 130px;
+  height: 160px;
 }
 
 .chapter-item td {
-  padding: 15px;
+  padding: 20px;
   vertical-align: middle;
 }
 
@@ -62,8 +69,8 @@ body {
 }
 
 .chapter-item img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 5px;
   display: block;
@@ -78,12 +85,12 @@ body {
 .chapter-number {
   color: #00aaff;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .chapter-title {
   color: #ccc;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .comic-container {
@@ -100,17 +107,30 @@ body {
   width: auto;
   max-width: 100%;
   display: block;
+  margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .nav {
   margin: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav a {
-  color: #00aaff;
+  background-color: #00aaff;
+  color: white;
   text-decoration: none;
-  margin: 0 20px;
+  padding: 10px 25px;
+  border-radius: 8px;
   font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #0077cc;
 }
