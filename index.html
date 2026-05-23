@@ -3,166 +3,275 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Comics</title>
+  <title>Counterside — MMM</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    // Apply saved theme before page renders to avoid flash
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
-  <h1>Counterside - MMM</h1>
 
-  <div class="comic-list">
-    <!-- Comic Item -->
-    <div class="comic-item">
-      <img src="logo_center_new.webp" alt="Comic Cover">
-      <p>The reality we live in, the Normal Side.
-      <p>And the other side, the world that encroaches on reality beyond the dimensional boundary.</p>
-      <p>Counterside</p>
-      <p>Now, with the discovery of the Corrosion, a threat to humanity due to mismanagement, and</p>
-      <p>the Counter, a special ability to counter the Corrosion,</p>
-      <p>the stopped clock begins ticking again.</p>
-      <h3>Chapters</h3>
-      <table class="chapter-list">
-        <tr class="chapter-item">
-          <td><a href="Chapter_1.html"><img src="MMM - [1] Hilde's Test Day/1-1.jpg" alt="Chapter 1 Preview"></a></td>
-          <td><a href="Chapter_1.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 1</span>
-            <span class="chapter-title">Hilde's Test Day</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_2.html"><img src="MMM - [2] SWAT 4's Patrol/2-1.jpg" alt="Chapter 2 Preview"></a></td>
-          <td><a href="Chapter_2.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 2</span>
-            <span class="chapter-title">SWAT 4's Patrol</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_3.html"><img src="MMM - [3] 100 Days Cleaning/3-1.jpg" alt="Chapter 3 Preview"></a></td>
-          <td><a href="Chapter_3.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 3</span>
-            <span class="chapter-title">100 Days Cleaning</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_4.html"><img src="MMM - [4] Sylvia''s Holidays/4-1.png" alt="Chapter 4 Preview"></a></td>
-          <td><a href="Chapter_4.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 4</span>
-            <span class="chapter-title">Sylvia's Holidays</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_5.html"><img src="MMM - [5] SWAT 4's end of year patrol/5-25.jpg" alt="Chapter 5 Preview"></a></td>
-          <td><a href="Chapter_5.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 5</span>
-            <span class="chapter-title">SWAT 4's end of year patrol</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_6.html"><img src="MMM - [6] Expressing Gratitude/Cover.png" alt="Chapter 6 Preview"></a></td>
-          <td><a href="Chapter_6.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 6</span>
-            <span class="chapter-title">Expressing Gratitude</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_7.html"><img src="MMM - [7] I want to be praised/7-1.jpg" alt="Chapter 7 Preview"></a></td>
-          <td><a href="Chapter_7.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 7</span>
-            <span class="chapter-title">I want to be praised</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_8.html"><img src="MMM - [8] The Solitary Scholar/8-3.png" alt="Chapter 8 Preview"></a></td>
-          <td><a href="Chapter_8.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 8</span>
-            <span class="chapter-title">The Solitary Scholar</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_9.html"><img src="MMM - [9] Sylvia's Monthly Activity Report/9-30.png" alt="Chapter 9 Preview"></a></td>
-          <td><a href="Chapter_9.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 9</span>
-            <span class="chapter-title">Sylvia's Monthly Activity Report</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_10.html"><img src="MMM - [10] The Nosy Demon Lord/ROSAAAAA.png" alt="Chapter 10 Preview"></a></td>
-          <td><a href="Chapter_10.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 10</span>
-            <span class="chapter-title">The Nosy Demon Lord</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_11.html"><img src="MMM - [11] Girls From Another World 1/Cover.png" alt="Chapter 11 Preview"></a></td>
-          <td><a href="Chapter_11.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 11</span>
-            <span class="chapter-title">Girls From Another World 1</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_12.html"><img src="MMM - [12] Girls From Another World 2/shiyoung.png" alt="Chapter 12 Preview"></a></td>
-          <td><a href="Chapter_12.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 12</span>
-            <span class="chapter-title">Girls From Another World 2</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_13.html"><img src="MMM - [13] Sigma's Operation Mommy/13-28.png" alt="Chapter 13 Preview"></a></td>
-          <td><a href="Chapter_13.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 13</span>
-            <span class="chapter-title">Sigma's Operation Mommy</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_14.html"><img src="MMM - [14] Cafe Strega/14-47.png" alt="Chapter 14 Preview"></a></td>
-          <td><a href="Chapter_14.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 14</span>
-            <span class="chapter-title">Cafe Strega</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_15.html"><img src="MMM - [15] Mina vs. Coffin/15-20.jpg" alt="Chapter 15 Preview"></a></td>
-          <td><a href="Chapter_15.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 15</span>
-            <span class="chapter-title">Mina vs. Coffin</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_16.html"><img src="MMM - [16]  Former Commander's Golden Hands/Alex.png" alt="Chapter 16 Preview"></a></td>
-          <td><a href="Chapter_16.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 16</span>
-            <span class="chapter-title">Former Commander's Golden Hands</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_17.html"><img src="MMM - [17] Welcome to Horizon Finance/17 cover.png" alt="Chapter 17 Preview"></a></td>
-          <td><a href="Chapter_17.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 17</span>
-            <span class="chapter-title">Welcome to Horizon Finance</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_18.html"><img src="MMM - [18]  Help me, Flora Maid Service!/difdiyfhd.png" alt="Chapter 18 Preview"></a></td>
-          <td><a href="Chapter_18.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 18</span>
-            <span class="chapter-title">Help me, Flora Maid Service!</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_19.html"><img src="MMM - [19] Meet The Little King/49.jpg" alt="Chapter 19 Preview"></a></td>
-          <td><a href="Chapter_19.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 19</span>
-            <span class="chapter-title">Meet The Little King</span>
-          </div></a></td>
-        </tr>
-        <tr class="chapter-item">
-          <td><a href="Chapter_20.html"><img src="MMM - [20] Afterschool Food Exploration Club/20cover.png  " alt="Chapter 20 Preview"></a></td>
-          <td><a href="Chapter_20.html"><div class="chapter-text">
-            <span class="chapter-number">Chapter 20</span>
-            <span class="chapter-title">Afterschool Food Exploration Club</span>
-          </div></a></td>
-        </tr>
-      </table>
+  <div class="site-header">
+    <div class="series-hero">
+      <div class="cover-thumb">
+        <img src="logo_center_new.webp" alt="Counterside — MMM cover">
+      </div>
+      <div class="series-meta">
+        <span class="series-tag">Webtoon · Slice of Life</span>
+        <h1 class="series-title">Counterside — MMM</h1>
+        <p class="series-subtitle">The reality we live in, the Normal Side. And the other side, the world that encroaches on reality beyond the dimensional boundary. Counterside</p>
+        <div class="series-stats">
+          <span class="stat"><strong>20</strong> Chapters</span>
+          <span class="stat"><strong>Ongoing</strong></span>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="section-bar">
+    <span class="section-label">Chapters</span>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <span class="chapter-count">1 – 20</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Dark</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="chapter-list">
+
+    <a class="chapter-item" href="Chapter_1.html">
+      <div class="chapter-preview">
+        <img src="MMM - [1] Hilde's Test Day/1-1.jpg" alt="Chapter 1 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 1</div>
+        <div class="ch-title">Hilde's Test Day</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_2.html">
+      <div class="chapter-preview">
+        <img src="MMM - [2] SWAT 4's Patrol/2-1.jpg" alt="Chapter 2 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 2</div>
+        <div class="ch-title">SWAT 4's Patrol</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_3.html">
+      <div class="chapter-preview">
+        <img src="MMM - [3] 100 Days Cleaning/3-1.jpg" alt="Chapter 3 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 3</div>
+        <div class="ch-title">100 Days Cleaning</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_4.html">
+      <div class="chapter-preview">
+        <img src="MMM - [4] Sylvia''s Holidays/4-1.png" alt="Chapter 4 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 4</div>
+        <div class="ch-title">Sylvia's Holidays</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_5.html">
+      <div class="chapter-preview">
+        <img src="MMM - [5] SWAT 4's end of year patrol/5-25.jpg" alt="Chapter 5 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 5</div>
+        <div class="ch-title">SWAT 4's End of Year Patrol</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_6.html">
+      <div class="chapter-preview">
+        <img src="MMM - [6] Expressing Gratitude/Cover.png" alt="Chapter 6 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 6</div>
+        <div class="ch-title">Expressing Gratitude</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_7.html">
+      <div class="chapter-preview">
+        <img src="MMM - [7] I want to be praised/7-1.jpg" alt="Chapter 7 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 7</div>
+        <div class="ch-title">I Want to Be Praised</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_8.html">
+      <div class="chapter-preview">
+        <img src="MMM - [8] The Solitary Scholar/8-3.png" alt="Chapter 8 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 8</div>
+        <div class="ch-title">The Solitary Scholar</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_9.html">
+      <div class="chapter-preview">
+        <img src="MMM - [9] Sylvia's Monthly Activity Report/9-30.png" alt="Chapter 9 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 9</div>
+        <div class="ch-title">Sylvia's Monthly Activity Report</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_10.html">
+      <div class="chapter-preview">
+        <img src="MMM - [10] The Nosy Demon Lord/ROSAAAAA.png" alt="Chapter 10 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 10</div>
+        <div class="ch-title">The Nosy Demon Lord</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_11.html">
+      <div class="chapter-preview">
+        <img src="MMM - [11] Girls From Another World 1/Cover.png" alt="Chapter 11 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 11</div>
+        <div class="ch-title">Girls From Another World 1</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_12.html">
+      <div class="chapter-preview">
+        <img src="MMM - [12] Girls From Another World 2/shiyoung.png" alt="Chapter 12 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 12</div>
+        <div class="ch-title">Girls From Another World 2</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_13.html">
+      <div class="chapter-preview">
+        <img src="MMM - [13] Sigma's Operation Mommy/13-28.png" alt="Chapter 13 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 13</div>
+        <div class="ch-title">Sigma's Operation Mommy</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_14.html">
+      <div class="chapter-preview">
+        <img src="MMM - [14] Cafe Strega/14-47.png" alt="Chapter 14 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 14</div>
+        <div class="ch-title">Cafe Strega</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_15.html">
+      <div class="chapter-preview">
+        <img src="MMM - [15] Mina vs. Coffin/15-20.jpg" alt="Chapter 15 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 15</div>
+        <div class="ch-title">Mina vs. Coffin</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_16.html">
+      <div class="chapter-preview">
+        <img src="MMM - [16]  Former Commander's Golden Hands/Alex.png" alt="Chapter 16 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 16</div>
+        <div class="ch-title">Former Commander's Golden Hands</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_17.html">
+      <div class="chapter-preview">
+        <img src="MMM - [17] Welcome to Horizon Finance/17 cover.png" alt="Chapter 17 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 17</div>
+        <div class="ch-title">Welcome to Horizon Finance</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_18.html">
+      <div class="chapter-preview">
+        <img src="MMM - [18]  Help me, Flora Maid Service!/difdiyfhd.png" alt="Chapter 18 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 18</div>
+        <div class="ch-title">Help Me, Flora Maid Service!</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_19.html">
+      <div class="chapter-preview">
+        <img src="MMM - [19] Meet The Little King/49.jpg" alt="Chapter 19 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 19</div>
+        <div class="ch-title">Meet the Little King</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+    <a class="chapter-item" href="Chapter_20.html">
+      <div class="chapter-preview">
+        <img src="MMM - [20] Afterschool Food Exploration Club/20cover.png" alt="Chapter 20 preview">
+      </div>
+      <div class="chapter-info">
+        <div class="ch-num">Chapter 20</div>
+        <div class="ch-title">Afterschool Food Exploration Club</div>
+      </div>
+      <span class="read-btn">Read</span>
+    </a>
+
+  </div>
+
+<script src="theme.js"></script> 
 </body>
 </html>

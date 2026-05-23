@@ -3,45 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counterside</title>
+  <title>Chapter 9 — Sylvia's Monthly Activity Report · Counterside MMM</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
-  <h1>Sylvia's Monthly Activity Report</h1>
 
-  <div class="comic-container">
-    <p>
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-1.png" alt="Page 1">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-2.png" alt="Page 2">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-3.png" alt="Page 3">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-4.png" alt="Page 4">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-5.png" alt="Page 5">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-6.png" alt="Page 6">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-7.png" alt="Page 7">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-8.png" alt="Page 8">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-9.png" alt="Page 9">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-10.png" alt="Page 10">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-11.png" alt="Page 11">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-12.png" alt="Page 12">
-      <br style="clear: both;">
-      <img src="MMM - [9] Sylvia's Monthly Activity Report/TLED 9-13.png" alt="Page 13">
-      <br style="clear: both;">
-    </p>
-  <div class="nav">
-    
-    <a href="index.html">⬅ Back to Home</a>
-    <a href="Chapter_10.html">Next Chapter ➡</a>
-  </div>
+  <!-- Sticky Reader Header -->
+  <header class="reader-header">
+    <a href="index.html" class="back-btn">&#8592; All Chapters</a>
+
+    <div class="reader-title-wrap">
+      <div class="reader-series">Counterside — MMM</div>
+      <div class="reader-chapter">Chapter 9 · Sylvia's Monthly Activity Report</div>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span id="themeIcon">🌙</span>
+      <span id="themeLabel">Dark</span>
+    </button>
+
+    <a href="Chapter_10.html" class="reader-nav-btn">Next &#8594;</a>
+  </header>
+
+  <!-- Comic Strip -->
+  <main class="comic-strip" id="comicStrip">
+    <!-- Pages loaded dynamically -->
+  </main>
+
+  <!-- Comment Section -->
+  <section class="comments-section">
+    <div class="comments-inner">
+      <h2 class="comments-heading">Comments</h2>
+      <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="de0c23ff-d9f2-4b71-904e-94955b10762d"
+        data-page-id="chapter-9"
+        data-page-title="Sylvia's Monthly Activity Report"
+        data-page-url="https://sonomiyaph.github.io/Counterside_Comics/Chapter_9.html">
+      </div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer class="reader-footer">
+    <a href="Chapter_8.html" class="reader-nav-btn">&#8592; Prev Chapter</a>
+    <span class="footer-label">Chapter 9 of 20</span>
+    <a href="Chapter_10.html" class="reader-nav-btn">Next Chapter &#8594;</a>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script>
+    // Dynamically load pages — tries 9-1, 9-2 ... until image fails
+    (function() {
+      const strip = document.getElementById('comicStrip');
+      const folder = "MMM - [9] Sylvia's Monthly Activity Report";
+      const ext = "png";
+      let page = 1;
+      const MAX = 80;
+
+      function loadNext() {
+        if (page > MAX) return;
+        const img = new Image();
+        const src = folder + "/" + "TLED 9-" + page + "." + ext;
+        img.onload = function() {
+          img.alt = "Page " + page;
+          img.className = "";
+          strip.appendChild(img);
+          page++;
+          loadNext();
+        };
+        img.onerror = function() {
+          // done
+        };
+        img.src = src;
+      }
+
+      loadNext();
+    })();
+  </script>
+
 </body>
 </html>
